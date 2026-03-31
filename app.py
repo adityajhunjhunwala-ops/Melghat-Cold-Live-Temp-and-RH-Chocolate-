@@ -5,7 +5,7 @@ from datetime import datetime
 import pytz
 
 # --- 1. CONFIGURATION ---
-st.set_page_config(page_title="Melghat Cold Storage Live", layout="wide")
+st.set_page_config(page_title="Melghat Cold Storage Live Temp and RH", layout="wide")
 
 # Advanced CSS: Hides GitHub name, Header, Footer, and Toolbar
 hide_style = """
@@ -35,8 +35,8 @@ ADMIN_PASSWORD = "admin_melghat_123"
 IST = pytz.timezone('Asia/Kolkata')
 
 # --- 2. DATABASE LINK ---
-SHEET_ID = "1VdlrBRqSHffGA32cCUCHm7Vbn5zA8CP-5A53Gjc-g9Q"
-SHEET_URL = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/export?format=csv&gid=0"
+SHEET_ID = "1RiDh11R8FhczC5zbzucf_gsbLu-T7N0iiG3g9c80f20"
+SHEET_URL = f"https://docs.google.com/spreadsheets/d/1RiDh11R8FhczC5zbzucf_gsbLu-T7N0iiG3g9c80f20/edit?gid=0#gid=0"
 
 @st.cache_data(ttl=30)
 def load_data():
